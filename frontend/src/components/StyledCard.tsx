@@ -7,6 +7,13 @@ type StyledCardProps = {
   topright?: ReactNode;
 };
 
+// TODO:
+// Split card into two parts:
+// Top part for card title (with border-b)
+// Bottom part for everything else
+
+// TODO:
+// Lightmode for cards and in general, use Jotai w/ persistece
 export function StyledCard({ title, className = '', children, topright }: StyledCardProps) {
   return (
     <section
