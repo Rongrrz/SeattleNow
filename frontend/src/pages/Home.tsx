@@ -1,28 +1,16 @@
-import { Link } from 'react-router-dom';
 import { StyledCard } from '../components/StyledCard';
 import { WIP } from '../components/WIP';
 
 export function Home() {
   return (
     <div className="mx-auto w-full max-w-7xl p-4 md:p-6">
-      <div className="mb-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-neutral-100">Last updated: just now</h1>
-        <button
-          onClick={() => window.location.reload()}
-          className="rounded text-xs text-blue-400 transition hover:text-blue-300 hover:underline focus:ring-1 focus:ring-blue-500/40 focus:outline-none"
-        >
-          Refresh
-        </button>
-      </div>
+      <h1 className="mb-4 text-2xl font-bold text-neutral-100">Last updated: just now</h1>
 
       {/* 3x3 dashboard */}
       <div className="grid auto-rows-[minmax(240px,1fr)] grid-cols-1 gap-4 md:grid-cols-3">
         {/* Row 1 */}
         <WIP>
-          <StyledCard
-            title="AI Summary (Last 15 Minutes)"
-            className="h-full md:col-span-2"
-          >
+          <StyledCard title="AI Summary (Last 15 Minutes)" className="h-full md:col-span-2">
             <div className="space-y-2 text-base leading-6">
               <p>
                 Light rail delays easing; I-5 northbound collision still causing backups at Mercer.
@@ -43,10 +31,7 @@ export function Home() {
         </WIP>
 
         <WIP>
-          <StyledCard
-            title="Reddit Discussions"
-            className="row-span-2 h-full"
-          >
+          <StyledCard title="Reddit Discussions" className="row-span-2 h-full">
             <ul className="space-y-3">
               <li>
                 <a
@@ -119,9 +104,7 @@ export function Home() {
               </div>
             </div>
           </div>
-          <div className="text-sm text-neutral-300">
-            <p>Light rain expected most of the day. Winds increasing in the afternoon.</p>
-          </div>
+          <p>Light rain expected most of the day. Winds increasing in the afternoon.</p>
         </StyledCard>
 
         {/* Row 3 */}
@@ -197,9 +180,7 @@ export function Home() {
         <WIP>
           <StyledCard title="Seattle Mood" className="h-full text-center">
             <div className="mb-2 text-6xl">🌧️☕</div>
-            <p className="text-sm text-neutral-300">
-              Calm, rainy, and caffeinated — Seattle feels introspective today.
-            </p>
+            <p>Calm, rainy, and caffeinated — Seattle feels introspective today.</p>
             <div className="mt-2 text-xs text-neutral-500">
               Mood generated from Reddit & weather trends
             </div>
