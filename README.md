@@ -3,5 +3,5 @@ This project initially began as "DubPolls" but then I discovered that Reddit alr
 ## On the Works:
 - 🤖 Basic functionalities
 - 📢 Integrating with Reddit for conversations
-- 🙉 AI Summary for SeattleNow
+- 🙉 AI Summary
 - 🔢 Integration with database to cache a few days back, for even more "Overseering"
