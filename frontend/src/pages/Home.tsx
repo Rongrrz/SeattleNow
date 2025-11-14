@@ -22,11 +22,6 @@ export function Home() {
           <StyledCard
             title="AI Summary (Last 15 Minutes)"
             className="h-full md:col-span-2"
-            topright={
-              <button className="rounded text-xs text-blue-400 hover:text-blue-300 hover:underline focus:ring-1 focus:ring-blue-500/40 focus:outline-none">
-                Regenerate
-              </button>
-            }
           >
             <div className="space-y-2 text-base leading-6">
               <p>
@@ -51,11 +46,6 @@ export function Home() {
           <StyledCard
             title="Reddit Discussions"
             className="row-span-2 h-full"
-            topright={
-              <Link to="/" className="text-xs text-blue-400 hover:underline">
-                View all
-              </Link>
-            }
           >
             <ul className="space-y-3">
               <li>
