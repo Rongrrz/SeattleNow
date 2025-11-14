@@ -1,4 +1,4 @@
-package com.dubpolls.backend.dto.user;
+package com.seattlehourly.backend.dto.user;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

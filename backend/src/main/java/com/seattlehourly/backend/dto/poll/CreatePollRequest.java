@@ -1,4 +1,4 @@
-package com.dubpolls.backend.dto.poll;
+package com.seattlehourly.backend.dto.poll;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

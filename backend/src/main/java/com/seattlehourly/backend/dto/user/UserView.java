@@ -1,4 +1,4 @@
-package com.dubpolls.backend.dto.user;
+package com.seattlehourly.backend.dto.user;
 
 import java.time.Instant;
 

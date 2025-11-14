@@ -1,4 +1,4 @@
-package com.dubpolls.backend.model;
+package com.seattlehourly.backend.model;
 
 import java.time.Instant;
 

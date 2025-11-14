@@ -1,4 +1,4 @@
-package com.dubpolls.backend.controller;
+package com.seattlehourly.backend.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

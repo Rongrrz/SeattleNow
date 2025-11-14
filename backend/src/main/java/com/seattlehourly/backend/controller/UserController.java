@@ -1,9 +1,9 @@
-package com.dubpolls.backend.controller;
+package com.seattlehourly.backend.controller;
 
-import com.dubpolls.backend.dto.user.CreateUserRequest;
-import com.dubpolls.backend.dto.user.UserView;
-import com.dubpolls.backend.model.User;
-import com.dubpolls.backend.service.UserService;
+import com.seattlehourly.backend.dto.user.CreateUserRequest;
+import com.seattlehourly.backend.dto.user.UserView;
+import com.seattlehourly.backend.model.User;
+import com.seattlehourly.backend.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 

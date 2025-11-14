@@ -7,7 +7,7 @@ export function Navbar() {
         to="/"
         className="text-xl font-bold text-white hover:text-blue-400 transition"
       >
-        SeattleNow
+        SeattleHourly
       </Link>
 
       <div className="flex gap-5 text-sm font-medium">

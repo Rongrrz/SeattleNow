@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 
 export function App() {
   return (
-    <BrowserRouter basename="/SeattleNow">
+    <BrowserRouter basename="/SeattleHourly">
       <div className="flex min-h-screen flex-col bg-neutral-950 text-neutral-100">
         <Navbar />
 
@@ -14,9 +15,7 @@ export function App() {
           </Routes>
         </main>
 
-        <footer className="border-t border-neutral-800 bg-neutral-900 py-3 text-center text-sm text-neutral-400">
-          SeattleNow, 2025
-        </footer>
+        <Footer />
       </div>
     </BrowserRouter>
   );

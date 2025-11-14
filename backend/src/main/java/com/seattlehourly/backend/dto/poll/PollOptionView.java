@@ -1,4 +1,4 @@
-package com.dubpolls.backend.dto.poll;
+package com.seattlehourly.backend.dto.poll;
 
 /**
  * Simple DTO representing a poll option in API responses.

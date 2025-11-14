@@ -1,10 +1,10 @@
-package com.dubpolls.backend.controller;
+package com.seattlehourly.backend.controller;
 
-import com.dubpolls.backend.dto.poll.CreatePollRequest;
-import com.dubpolls.backend.dto.poll.PollOptionView;
-import com.dubpolls.backend.dto.poll.PollView;
-import com.dubpolls.backend.model.Poll;
-import com.dubpolls.backend.service.PollService;
+import com.seattlehourly.backend.dto.poll.CreatePollRequest;
+import com.seattlehourly.backend.dto.poll.PollOptionView;
+import com.seattlehourly.backend.dto.poll.PollView;
+import com.seattlehourly.backend.model.Poll;
+import com.seattlehourly.backend.service.PollService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 

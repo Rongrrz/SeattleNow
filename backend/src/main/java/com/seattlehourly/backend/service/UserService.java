@@ -1,6 +1,6 @@
-package com.dubpolls.backend.service;
+package com.seattlehourly.backend.service;
 
-import com.dubpolls.backend.model.User;
+import com.seattlehourly.backend.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
