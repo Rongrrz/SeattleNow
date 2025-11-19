@@ -9,8 +9,8 @@ export function Weather() {
     <StyledCard title="Current Weather" className="h-full">
       <div className="flex items-end gap-4">
         <div>
-          <div className="text-4xl font-black">{weather.temperature}°F</div>
-          <div className="text-neutral-400">{weather.windMPH}mph</div>
+          <div className="text-4xl font-black pb-0.5">{weather.temperature}°F</div>
+          <div className="text-neutral-400">Wind: {weather.windMPH} miles per hour</div>
         </div>
       </div>
       <hr className="my-3 border-neutral-800" />
