@@ -15,6 +15,8 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.seattlehourly.backend.utils.TimeUtils.formatTimeAgo;
+
 @Service
 public class RedditService {
     private static final String SUBREDDIT_URL = "https://www.reddit.com/r/%s/new/.json?limit=%d";
@@ -41,7 +43,7 @@ public class RedditService {
     }
 
     @Scheduled(fixedRate = 300_000) // 5 minutes per
-    public void updateSeattleClusterPosts() {
+    private void updateSeattleClusterPosts() {
         List<RedditPost> combined = new ArrayList<>();
         for (String subreddit : Constants.SUBREDDITS) {
             combined.addAll(fetchSubredditPosts(subreddit, 5));
@@ -76,10 +78,10 @@ public class RedditService {
                 var newPost = new RedditPost(
                         title,
                         subreddit,
-                        formatTimeAgo(createdUtc),
-                        createdUtc,
                         comments,
-                        "https://www.reddit.com" + permalink
+                        "https://www.reddit.com" + permalink,
+                        formatTimeAgo(createdUtc),
+                        createdUtc
                 );
                 posts.add(newPost);
             }
@@ -88,18 +90,5 @@ public class RedditService {
             System.err.println("Reddit fetch failed for r/" + subreddit + ": " + e.getMessage());
             return List.of();
         }
-    }
-
-    private String formatTimeAgo(long createdUtc) {
-        Instant created = Instant.ofEpochSecond(createdUtc);
-        long minutes = Duration.between(created, Instant.now()).toMinutes();
-
-        if (minutes < 1) return "just now";
-        if (minutes == 1) return "1 min ago";
-        if (minutes < 60) return minutes + " mins ago";
-
-        long hours = minutes / 60;
-        if (hours == 1) return "1 hour ago";
-        return hours + " hours ago";
     }
 }

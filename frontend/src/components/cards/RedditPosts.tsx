@@ -5,7 +5,6 @@ import { redditPostsAtom } from '../../stores/RedditPosts';
 // TODO: Add how many minutes ago was the post
 export function RedditPosts() {
   const [posts] = useAtom(redditPostsAtom);
-  console.log(posts);
 
   return (
     <StyledCard title="Reddit Discussions" className="h-full row-span-2">
